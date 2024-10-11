@@ -1,5 +1,5 @@
 # Resolution of mandelbrot set, must be set to multiple of 5
-resolution = 213
+resolution = 101
 
 # Create complex plane
 complexPlane = [[' ' for y in range(resolution)] for x in range(resolution)]
