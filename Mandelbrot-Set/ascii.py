@@ -1,4 +1,3 @@
-# Resolution of mandelbrot set, must be set to multiple of 5
 resolution = 101
 
 # Create complex plane
@@ -19,10 +18,6 @@ def CheckComplexNumber(a, b):
         z = z * z + c
     finalAbs = abs(z)
     # Check if absolute value of complex number tends towards infinity
-    # if finalAbs > initialAbs:
-    #     return False
-    # else:
-    #     return True
     if finalAbs > 2:
         return False
     else:
@@ -30,15 +25,15 @@ def CheckComplexNumber(a, b):
 
 # Prints the plane
 def PrintPlane(plane):
-    for y in range(len(plane) - 1, -1, -1):
-        for x in range(len(plane)):
+    for y in range(resolution - 1, -1, -1):
+        for x in range(resolution):
             print(plane[x][y], end='')
         print()
 
 # Assigns each ascii value depending on the CheckComplexNumber function
 def CreateMandelbrotSet():
-    for y in range(len(complexPlane)):
-        for x in range(len(complexPlane)):
+    for y in range(resolution):
+        for x in range(resolution):
             if CheckComplexNumber(x, y):
                 complexPlane[x][y] = '■'
             # complexPlane[x][y] = '|x' + str(x) + 'y' + str(y) + '|'
