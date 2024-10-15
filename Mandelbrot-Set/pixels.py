@@ -21,9 +21,9 @@ def CreateMandelbrotSet():
         for x in range(resolution):
             if CheckComplexNumber(x, y):
                 img.putpixel( (x, y), (0, 0, 0))
-            loops += 1
-            print(str(loops / resolution ** 2 * 100) + '%')
+        loops += 1
+        print(str(loops / resolution * 100) + '%')
 
 CreateMandelbrotSet()
-img.save("Mandelbrot-Set-BW", "png")
+img.save("Mandelbrot-Set-BW-tmp", "png")
 img.show()
