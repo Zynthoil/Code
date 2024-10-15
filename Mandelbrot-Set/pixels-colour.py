@@ -1,8 +1,10 @@
 from PIL import Image
 from numpy import array
 import colorsys
+import time
 
 resolution = 10001
+d = 2
 
 img = Image.new('RGB', (resolution, resolution), color='white')
 
@@ -18,7 +20,7 @@ def CheckComplexNumber(a, b):
     c = complex(a, b)
     initialAbs = abs(c)
     for i in range(100):
-        z = z * z + c
+        z = z ** d + c
         n += 1
         if abs(z) > 2: return GenerateColour(n)
     return (0, 0, 0)
@@ -29,9 +31,15 @@ def CreateMandelbrotSet():
         for x in range(resolution):
             colour = CheckComplexNumber(x, y)
             img.putpixel( (x, y), colour)
-            loops += 1
-            print(str(loops / resolution ** 2 * 100) + '%')
+        loops += 1
+        percentage = loops / resolution * 100
+        print(str(round(percentage, 2)) + '%')
+        # print(str(round(loops / resolution * 100), 2) + '%')
 
+startTime = time.perf_counter()
 CreateMandelbrotSet()
+endTime = time.perf_counter()
+timeTaken = endTime - startTime
+print(timeTaken)
 img.save("Mandelbrot-Set-C-tmp", "png")
 img.show()
