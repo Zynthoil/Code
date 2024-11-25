@@ -3,7 +3,7 @@ import random
 import math
 
 res = 20000
-iterations = 1000000000
+iterations = 100000000000
 
 img = Image.new('RGB', (res, res), color='white')
 
