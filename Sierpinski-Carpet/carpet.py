@@ -1,6 +1,5 @@
 from PIL import Image
 import random
-import math
 
 res = 20000
 iterations = 100000000000
@@ -21,7 +20,6 @@ edgePoints = [
 def GenerateNextPoint(point):
     point = (point[0] + 0.5, point[1] + 0.5)
     edgePoint = random.choice(edgePoints)
-    # print(edgePoint, end='  ')
     distance = (edgePoint[0] - point[0], edgePoint[1] - point[1])
     newPoint = (int(point[0] + (distance[0] / 3 * 2)), int(point[1] + (distance[1] / 3 * 2)))
     return newPoint
@@ -29,9 +27,7 @@ def GenerateNextPoint(point):
 def CreateCarpet():
     point = (random.randint(0, res), random.randint(0, res))
     for i in range(iterations):
-        # print(point, end='  ')
         point = GenerateNextPoint(point)
-        # print(point)
         img.putpixel(point, (0, 0, 0))
         if i % (iterations / 1000) == 0:
             print(i / iterations * 100)
