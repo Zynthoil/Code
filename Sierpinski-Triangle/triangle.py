@@ -3,7 +3,7 @@ import random
 import math
 
 res = 100000
-iterations = 100000000
+iterations = 1000000000
 
 img = Image.new('1', (res, res), color=1)
 frames = []
