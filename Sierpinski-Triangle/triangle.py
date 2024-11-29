@@ -2,10 +2,11 @@ from PIL import Image
 import random
 import math
 
-res = 10000
-iterations = 100000000
+res = 20000
+iterations = 1000000000
 
 img = Image.new('RGB', (res, res), color='white')
+frames = []
 
 topY = res - int(math.sqrt(3 / 4 * res ** 2))
 cornerPoints = [
@@ -26,9 +27,12 @@ def CreateTriangle():
     for i in range(iterations):
         point = GenerateNextPoint(point)
         img.putpixel(point, (0, 0, 0))
+        # imgTmp = img.copy()
+        # frames.append(imgTmp)
         if i % (iterations / 1000) == 0:
             print(i / iterations * 100)
 
 CreateTriangle()
 img.save("Sierpinski-Triangle.png", "png")
+# frames[0].save("Sierpinski-Triangle-GIF.gif", format="GIF", append_images = frames[1:], save_all = True, duration = 10, loop=0)
 img.show()
