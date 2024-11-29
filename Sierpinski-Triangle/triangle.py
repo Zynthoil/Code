@@ -2,10 +2,10 @@ from PIL import Image
 import random
 import math
 
-res = 20000
-iterations = 1000000000
+res = 100000
+iterations = 100000000
 
-img = Image.new('RGB', (res, res), color='white')
+img = Image.new('1', (res, res), color=1)
 frames = []
 
 topY = res - int(math.sqrt(3 / 4 * res ** 2))
@@ -26,7 +26,7 @@ def CreateTriangle():
     point = (res / 2, res / 2)
     for i in range(iterations):
         point = GenerateNextPoint(point)
-        img.putpixel(point, (0, 0, 0))
+        img.putpixel(point, 0)
         # imgTmp = img.copy()
         # frames.append(imgTmp)
         if i % (iterations / 1000) == 0:
