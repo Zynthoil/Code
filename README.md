@@ -32,6 +32,8 @@ I could of course generate this much faster normally, but I though the chaos gam
 
 I made this after making the Sierpinski Carpet, which was a good start due to its rectangular nature.
 
+Chiron is the best :)
+
 Generates a Sierpinski Triangle with the chaos game. Essentially:
 - Choose initial starting point as the center of the screen (I didn't want to try generated a random point within the bounds of the triangle).
 - Pick a random corner.
