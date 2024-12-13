@@ -30,6 +30,8 @@ I could of course generate this much faster normally, but I though the chaos gam
 
 ## Sierpinski Triangle
 
+![Generated Sierpinski Triangle](https://github.com/Zynthoil/Code/blob/master/Sierpinski-Triangle/Sierpinski-Triangle.png)
+
 I made this after making the Sierpinski Carpet, which was a good start due to its rectangular nature.
 
 Generates a Sierpinski Triangle with the chaos game. Essentially:
