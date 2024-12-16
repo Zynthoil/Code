@@ -48,4 +48,4 @@ I also made some changes with this one to make a GIF of the generation. Currentl
 
 ![Generated Burning Ship](https://github.com/Zynthoil/Code/blob/master/Burning-Ship/Burning-Ship-Full.png)
 
-A very easy modification to the Mandelbrot Set, just using a slightly different recursive function. While making this, I also added the ability to zoom in on specific points so that I could generated images of more interesting regions (not in this repo as the files are too larfge).
+A very easy modification to the Mandelbrot Set, just using a slightly different recursive function. While making this, I also added the ability to zoom in on specific points so that I could generated images of more interesting regions (not in this repo as the files are too large).
