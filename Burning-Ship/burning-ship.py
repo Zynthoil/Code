@@ -6,11 +6,11 @@ import time
 resolution = 20000
 iterations = 100
 point = (0.975, -1.175)
-bounds = 0.5
-upperBoundX = point[0] + (bounds/2)
-lowerBoundX = point[0] - (bounds/2)
-upperBoundY = point[1] + (bounds/2)
-lowerBoundY = point[1] - (bounds/2)
+bounds = 0.25
+upperBoundX = point[0] + bounds
+lowerBoundX = point[0] - bounds
+upperBoundY = point[1] + bounds
+lowerBoundY = point[1] - bounds
 
 img = Image.new('RGB', (resolution, resolution), color='white')
 
