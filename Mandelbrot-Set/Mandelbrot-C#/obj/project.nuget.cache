@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uoWF8o5XsTIVWyOL39nrfsc0paRVOOZWikZ1+PSeXQ+qsV39QKvbfXuW/sKhNR9jjhiAdIJbSO5d12+sVY+1PQ==",
+  "dgSpecHash": "/Ndrgv/w3ZazFHQ3Oh3xMCpDOD6uB59Aasd9RgUKRTjW1lZsIH/z9r1fceHu1btJlC92mfJDXwTD9h3LFQ2LBw==",
   "success": true,
-  "projectFilePath": "/home/sammo/Documents/Mandelbrot-C#/Mandelbrot-C#.csproj",
+  "projectFilePath": "/home/sammo/Documents/Code/Mandelbrot-Set/Mandelbrot-C#/Mandelbrot-C#.csproj",
   "expectedPackageFiles": [
     "/home/sammo/.nuget/packages/sixlabors.imagesharp/3.1.6/sixlabors.imagesharp.3.1.6.nupkg.sha512",
     "/home/sammo/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.11/microsoft.aspnetcore.app.ref.8.0.11.nupkg.sha512"

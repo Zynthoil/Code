@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/sammo/Documents/Mandelbrot-C#/Mandelbrot-C#.csproj": {}
+    "/home/sammo/Documents/Code/Mandelbrot-Set/Mandelbrot-C#/Mandelbrot-C#.csproj": {}
   },
   "projects": {
-    "/home/sammo/Documents/Mandelbrot-C#/Mandelbrot-C#.csproj": {
+    "/home/sammo/Documents/Code/Mandelbrot-Set/Mandelbrot-C#/Mandelbrot-C#.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/sammo/Documents/Mandelbrot-C#/Mandelbrot-C#.csproj",
+        "projectUniqueName": "/home/sammo/Documents/Code/Mandelbrot-Set/Mandelbrot-C#/Mandelbrot-C#.csproj",
         "projectName": "Mandelbrot-C#",
-        "projectPath": "/home/sammo/Documents/Mandelbrot-C#/Mandelbrot-C#.csproj",
+        "projectPath": "/home/sammo/Documents/Code/Mandelbrot-Set/Mandelbrot-C#/Mandelbrot-C#.csproj",
         "packagesPath": "/home/sammo/.nuget/packages/",
-        "outputPath": "/home/sammo/Documents/Mandelbrot-C#/obj/",
+        "outputPath": "/home/sammo/Documents/Code/Mandelbrot-Set/Mandelbrot-C#/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/sammo/.nuget/NuGet/NuGet.Config"
